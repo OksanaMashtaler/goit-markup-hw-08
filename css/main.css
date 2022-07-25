@@ -358,9 +358,9 @@ p {
   border: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .section-preference {
-    padding-top: 94px;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -368,9 +368,9 @@ p {
     padding-top: 60px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .section-preference {
-    padding-top: 60px;
+    padding-top: 94px;
   }
 }
 
@@ -380,11 +380,26 @@ p {
   }
 }
 
-.preference-list__item {
-  width: calc((100% - 90px) / 4);
+@media screen and (min-width: 480px) {
+  .preference-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
-.preference-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .preference-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .preference-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preference-list__item {
+    width: calc((100% - 90px) / 4);
+  }
+  .preference-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .preference-list__icon {
@@ -401,6 +416,11 @@ p {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 480px) {
+  .preference-list__title {
+    align-items: center;
+  }
+}
 
 .preference-list__text {
   font-size: 14px;
@@ -408,16 +428,40 @@ p {
   letter-spacing: 0.03em;
   color: #757575;
 }
+@media screen and (min-width: 480px) {
+  .preference-list__text {
+    align-items: center;
+  }
+}
 
 .overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
-  width: 270px;
   background-color: #f5f4fa;
-  margin-bottom: 30px;
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .overlay {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+  }
 }
 
 .section-work {
