@@ -1,0 +1,48 @@
+.section-preference {
+  padding-top: 94px;
+}
+
+.preference-list {
+  display: flex;
+}
+
+.preference-list__item {
+  width: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.preference-list__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.preference-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.preference-list__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 270px;
+  background-color: $color-backgroubd-team;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}

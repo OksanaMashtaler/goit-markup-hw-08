@@ -1,0 +1,108 @@
+.header {
+  background-color: $accent-color;
+
+  & .container {
+    display: flex;
+  }
+}
+
+.logo {
+  font-family: $font-family-logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $logo-color;
+  margin-right: 93px;
+}
+
+.logo__web {
+  color: $brand-color;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondary-color;
+  display: flex;
+  flex-direction: row;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+
+.contact {
+  margin-left: auto;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contact-list__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:hover .contact-list__icon,
+  &:focus .contact-list__icon {
+    color: $brand-color;
+    fill: $brand-color;
+  }
+}
+
+.active {
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: $brand-color;
+    left: 0;
+    bottom: -33px;
+    border-radius: 2px;
+  }
+}
+
+.contact-list__icon {
+  margin-right: 10px;
+  fill: $main-color;
+}
