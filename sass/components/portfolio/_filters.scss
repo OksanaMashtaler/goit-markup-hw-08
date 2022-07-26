@@ -1,5 +1,6 @@
 .project-filter__list {
   display: flex;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 480px) {
     flex-wrap: wrap;
@@ -18,6 +19,9 @@
 }
 
 .project-filter__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+
   @media screen and (min-width: 480px) {
     margin-right: 8px;
     margin-bottom: 15px;

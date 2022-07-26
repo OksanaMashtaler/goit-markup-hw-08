@@ -4,14 +4,14 @@
 }
 
 .footer-container {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    text-align: center;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
 }
 
@@ -58,6 +58,14 @@
 }
 
 .footer-container__social {
+  margin-bottom: 60px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-top: 12px;
@@ -76,9 +84,9 @@
 
 .fotter-social__list {
   display: flex;
+  justify-content: center;
 
   @media screen and (min-width: 480px) {
-    justify-content: center;
     margin-bottom: 60px;
   }
 }
@@ -115,10 +123,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $accent-color;
-
-  @media screen and (min-width: 480px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 
 .footer-form__field {
@@ -131,15 +136,18 @@
 .footer-form input {
   margin-right: 12px;
   padding-left: 16px;
-  width: 358px;
+  margin-bottom: 20px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
 
   @media screen and (min-width: 480px) {
-    margin-bottom: 20px;
     width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 358px;
   }
 
   &::placeholder {
@@ -160,6 +168,11 @@
   display: inline-flex;
   align-items: center;
   color: $accent-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    margin: auto;
+  }
 }
 
 .footer-form__button_text {

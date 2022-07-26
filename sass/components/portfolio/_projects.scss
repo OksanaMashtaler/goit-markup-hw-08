@@ -34,9 +34,11 @@
     }
 
     &:nth-child(2n) {
-      margin-right: 0px;
+      margin-right: 0;
     }
-    &:nth-last-child(-n + 2) {
+
+    &:last-child {
+      margin-right: 0;
       margin-bottom: 0;
     }
   }
