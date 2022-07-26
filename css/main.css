@@ -102,6 +102,8 @@ p {
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
@@ -228,6 +230,7 @@ p {
 @media screen and (min-width: 480px) {
   .footer-form input {
     margin-bottom: 20px;
+    width: 100%;
   }
 }
 .footer-form input::placeholder {
@@ -236,11 +239,6 @@ p {
 
 .footer-form__input {
   color: rgba(255, 255, 255, 0.6);
-}
-@media screen and (min-width: 480px) {
-  .footer-form__input {
-    width: 100%;
-  }
 }
 
 .footer-button {

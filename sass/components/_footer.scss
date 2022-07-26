@@ -10,6 +10,8 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
@@ -137,6 +139,7 @@
 
   @media screen and (min-width: 480px) {
     margin-bottom: 20px;
+    width: 100%;
   }
 
   &::placeholder {
@@ -146,9 +149,6 @@
 
 .footer-form__input {
   color: rgba(255, 255, 255, 0.6);
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
 }
 
 .footer-button {
