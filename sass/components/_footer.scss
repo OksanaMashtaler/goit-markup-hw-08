@@ -1,11 +1,16 @@
 .footer {
   background-color: $color-background-secondary;
   padding: 60px 0;
-  display: flex;
 }
 
 .footer-container {
-  display: flex;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .logo-footer {
@@ -20,6 +25,10 @@
 .address {
   font-style: normal;
   margin-top: 20px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-address__text {
@@ -47,8 +56,10 @@
 }
 
 .footer-container__social {
-  margin-left: 70px;
-  margin-top: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
 }
 
 .footer-social__title {
@@ -63,6 +74,11 @@
 
 .fotter-social__list {
   display: flex;
+
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social__item {
@@ -84,9 +100,10 @@
   }
 }
 
-
 .footer-form {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .footer-form__title {
@@ -96,11 +113,17 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $accent-color;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-form__field {
-  display: flex;
-  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 20px;
+  }
 }
 
 .footer-form input {
@@ -112,6 +135,10 @@
   border-radius: 4px;
   background-color: #2f303a;
 
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
+
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
@@ -119,6 +146,9 @@
 
 .footer-form__input {
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
 }
 
 .footer-button {

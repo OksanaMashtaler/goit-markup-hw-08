@@ -92,11 +92,17 @@ p {
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
-  display: flex;
 }
 
-.footer-container {
-  display: flex;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+  }
 }
 
 .logo-footer {
@@ -111,6 +117,11 @@ p {
 .address {
   font-style: normal;
   margin-top: 20px;
+}
+@media screen and (min-width: 480px) {
+  .address {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-address__text {
@@ -135,9 +146,11 @@ p {
   color: #2196f3;
 }
 
-.footer-container__social {
-  margin-left: 70px;
-  margin-top: 12px;
+@media screen and (min-width: 1200px) {
+  .footer-container__social {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
 }
 
 .footer-social__title {
@@ -152,6 +165,12 @@ p {
 
 .fotter-social__list {
   display: flex;
+}
+@media screen and (min-width: 480px) {
+  .fotter-social__list {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social__item {
@@ -170,8 +189,10 @@ p {
   border-radius: 50px;
 }
 
-.footer-form {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: 93px;
+  }
 }
 
 .footer-form__title {
@@ -182,10 +203,17 @@ p {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 480px) {
+  .footer-form__title {
+    margin-bottom: 20px;
+  }
+}
 
-.footer-form__field {
-  display: flex;
-  margin-top: 20px;
+@media screen and (min-width: 1200px) {
+  .footer-form__field {
+    display: flex;
+    margin-top: 20px;
+  }
 }
 
 .footer-form input {
@@ -197,12 +225,22 @@ p {
   border-radius: 4px;
   background-color: #2f303a;
 }
+@media screen and (min-width: 480px) {
+  .footer-form input {
+    margin-bottom: 20px;
+  }
+}
 .footer-form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form__input {
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 100%;
+  }
 }
 
 .footer-button {
