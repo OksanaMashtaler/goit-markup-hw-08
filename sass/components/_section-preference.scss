@@ -28,14 +28,10 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-    width: calc((100% - 30px) / 2);
-
     margin-bottom: 30px;
+    margin-right: 30px;
 
-    &:nth-child(n) {
+    &:not(:last-child) {
       margin-right: 30px;
     }
 
