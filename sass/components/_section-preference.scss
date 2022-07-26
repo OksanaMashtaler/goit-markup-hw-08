@@ -3,8 +3,9 @@
     padding-top: 60px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -15,6 +16,7 @@
 .preference-list {
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -28,6 +30,20 @@
 
     &:not(:last-child) {
       margin-right: 30px;
+    }
+    width: calc((100% - 30px) / 2);
+
+    margin-bottom: 30px;
+
+    &:nth-child(n) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
 
@@ -44,7 +60,7 @@
   width: 70px;
   height: 70px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-top: 25px;
   }
 }
@@ -58,7 +74,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     display: flex;
     justify-content: center;
   }
