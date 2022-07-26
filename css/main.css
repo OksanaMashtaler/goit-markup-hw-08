@@ -406,6 +406,11 @@ p {
   width: 70px;
   height: 70px;
 }
+@media screen and (min-width: 480px) {
+  .preference-list__icon {
+    margin-top: 25px;
+  }
+}
 
 .preference-list__title {
   font-weight: 700;
@@ -418,7 +423,8 @@ p {
 }
 @media screen and (min-width: 480px) {
   .preference-list__title {
-    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -443,6 +449,7 @@ p {
     height: 120px;
     width: 100%;
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {

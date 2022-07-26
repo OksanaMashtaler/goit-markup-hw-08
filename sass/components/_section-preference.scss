@@ -45,6 +45,10 @@
 .preference-list__icon {
   width: 70px;
   height: 70px;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 25px;
+  }
 }
 
 .preference-list__title {
@@ -57,7 +61,8 @@
   margin-bottom: 10px;
 
   @media screen and (min-width: 480px) {
-    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -80,6 +85,7 @@
     height: 120px;
     width: 100%;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   @media screen and (min-width: 768px) {
