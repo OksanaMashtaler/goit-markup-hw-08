@@ -1,12 +1,44 @@
 .project-filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .project-filter__item {
-  &:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
     margin-right: 8px;
+    margin-bottom: 15px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 15px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    &:nth-child(5) {
+      margin-right: 0;
+    }
   }
 }
 .project-filter__button {

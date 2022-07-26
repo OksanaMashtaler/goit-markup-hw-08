@@ -909,12 +909,45 @@ textarea {
 
 .project-filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .project-filter__list {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-filter__list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-filter__list {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
-.project-filter__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .project-filter__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .project-filter__item {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  .project-filter__item:nth-last-child(-n+2) {
+    margin-bottom: 15px;
+  }
+  .project-filter__item:nth-child(3) {
+    margin-right: 0;
+  }
+  .project-filter__item:nth-child(5) {
+    margin-right: 0;
+  }
 }
 
 .project-filter__button {
