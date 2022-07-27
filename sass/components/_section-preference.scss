@@ -1,5 +1,5 @@
 .section-preference {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     padding-top: 60px;
   }
 
@@ -21,14 +21,13 @@
 }
 
 .preference-list__item {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
 
-    margin-bottom: 30px;
     margin-right: 30px;
 
     &:not(:last-child) {
@@ -56,7 +55,7 @@
   width: 100%;
   height: 70px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-top: 25px;
   }
 }
@@ -70,7 +69,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
   }
@@ -82,7 +81,7 @@
   letter-spacing: 0.03em;
   color: $main-color;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     align-items: center;
   }
 }
@@ -91,7 +90,7 @@
   background-color: $color-backgroubd-team;
   border-radius: 4px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     height: 120px;
     width: 100%;
     margin-bottom: 30px;
@@ -103,6 +102,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    height: 120px;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
