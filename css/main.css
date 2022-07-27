@@ -415,7 +415,7 @@ p {
   height: 40px;
 }
 
-.mobile-menu__button {
+.js-open-menu {
   position: absolute;
   top: 0px;
   right: 15px;
@@ -424,16 +424,37 @@ p {
   border: none;
   padding: 10px 0;
 }
-.mobile-menu__button .icon-cross {
+.js-open-menu .icon-cross {
   display: none;
 }
 
-.mobile-menu__button.is-open .icon-cross {
-  display: block;
+.js-close-menu {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
 }
 
-.mobile-menu__button.is-open .icon-menu {
-  display: none;
+.js-menu-container {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.js-menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .hero-section {
