@@ -410,6 +410,32 @@ p {
   fill: #757575;
 }
 
+.mobile-menu__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu__button {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
+}
+.mobile-menu__button .icon-cross {
+  display: none;
+}
+
+.mobile-menu__button.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-menu__button.is-open .icon-menu {
+  display: none;
+}
+
 .hero-section {
   padding: 200px 0;
   color: #ffffff;
