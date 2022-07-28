@@ -53,6 +53,61 @@
           </li>
         </ul>
       </div>
+
+
+      <!-- // ------------mobile menu-------- -->
+      <button class="js-open-menu is-open" type="button is-open">
+        <svg class="mobile-menu__icon">
+          <use class="icon-menu" href="./images/sprite/icons.svg#menu"></use>
+        </svg>
+      </button>
+
+      <div class="js-menu-container" data-menu>
+        <button class="js-close-menu" type="button is-open" data-menu-button>
+          <svg class="mobile-menu__icon">
+
+            <use class="icon-cross" href="./images/sprite/icons.svg#menu-cross"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="index.html">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-contact__list">
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__link link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+            </li>
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__link link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+            </li>
+          </ul>
+
+          <ul class="mobile-social__list">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link link" href="">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -308,6 +363,8 @@
       </form>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
