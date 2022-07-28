@@ -17,7 +17,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   header {
-    padding: 26px 0;
+    padding: 21px 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -225,7 +225,6 @@ p {
 }
 
 .footer-form input {
-  margin-right: 12px;
   padding-left: 16px;
   margin-bottom: 20px;
   height: 50px;
@@ -246,6 +245,11 @@ p {
 .footer-form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 768px) {
+  .footer-form input {
+    margin-right: 12px;
+  }
+}
 
 .footer-form__input {
   color: rgba(255, 255, 255, 0.6);
@@ -264,7 +268,8 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-button {
     display: flex;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -306,6 +311,12 @@ p {
   letter-spacing: 0.03em;
   color: #000000;
   margin-right: 93px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .logo__web {
@@ -372,7 +383,18 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list__item {
+    height: 14px;
+  }
+  .contact-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
+  .contact-list__item {
+    height: 16px;
+  }
   .contact-list__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -387,6 +409,12 @@ p {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .contact-list__link {
+    height: inherit;
+    margin-bottom: 10px;
+  }
 }
 .contact-list__link:hover, .contact-list__link:focus, .contact-list__link:hover .contact-list__icon, .contact-list__link:focus .contact-list__icon {
   color: #2196f3;
@@ -408,6 +436,7 @@ p {
 .contact-list__icon {
   margin-right: 10px;
   fill: #757575;
+  height: inherit;
 }
 
 .mobile-menu__icon {
@@ -648,9 +677,7 @@ p {
   .preference-list__item {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
-  }
-  .preference-list__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 55px;
   }
   .preference-list__item:nth-child(2n) {
     margin-right: 0px;
@@ -1276,6 +1303,9 @@ textarea {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
   .project-list__item {
