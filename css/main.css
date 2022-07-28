@@ -567,6 +567,13 @@ p {
   text-align: center;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 767px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
+}
 
 .hero-button {
   font-family: "Roboto", sans-serif;
