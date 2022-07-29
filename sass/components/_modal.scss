@@ -160,11 +160,6 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox__field input[type="checkbox"] {
-  width: 16px;
-  height: 15px;
-}
-
 .modal-checkbox__field {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -217,4 +212,8 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: $accent-color;
+}
+
+.span {
+  display: contents;
 }

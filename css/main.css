@@ -110,17 +110,23 @@ p {
 .logo-footer {
   font-family: "Raleway", serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .address {
   font-style: normal;
   margin-top: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .address {
     margin-bottom: 60px;
   }
@@ -162,6 +168,7 @@ p {
   .footer-container__social {
     margin-left: 70px;
     margin-top: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -171,8 +178,13 @@ p {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social__title {
+    margin-top: 10px;
+  }
 }
 
 .fotter-social__list {
@@ -182,6 +194,11 @@ p {
 @media screen and (min-width: 480px) {
   .fotter-social__list {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fotter-social__list {
+    margin-bottom: 0;
   }
 }
 
@@ -234,10 +251,10 @@ p {
 }
 @media screen and (min-width: 480px) {
   .footer-form input {
-    width: 100%;
+    width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-form input {
     width: 358px;
   }
@@ -245,7 +262,7 @@ p {
 .footer-form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-form input {
     margin-right: 12px;
   }
@@ -312,7 +329,7 @@ p {
   color: #000000;
   margin-right: 93px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .logo {
     font-size: 24px;
     line-height: 1.16;
@@ -396,7 +413,7 @@ p {
     height: 16px;
   }
   .contact-list__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 }
 
@@ -414,6 +431,13 @@ p {
   .contact-list__link {
     height: inherit;
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__link {
+    height: inherit;
+    margin-bottom: 0px;
+    display: flex;
   }
 }
 .contact-list__link:hover, .contact-list__link:focus, .contact-list__link:hover .contact-list__icon, .contact-list__link:focus .contact-list__icon {
@@ -577,7 +601,7 @@ p {
 }
 
 .hero-section {
-  padding: 200px 0;
+  padding: 118px 0;
   color: #ffffff;
   max-width: 1600px;
   margin: auto;
@@ -593,6 +617,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
+    padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
   }
 }
@@ -606,7 +631,7 @@ p {
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero-title {
     font-size: 26px;
     line-height: 1.61;
@@ -644,7 +669,7 @@ p {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero2x.jpg);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .section-preference {
     padding-top: 60px;
   }
@@ -689,6 +714,7 @@ p {
 @media screen and (min-width: 1200px) {
   .preference-list__item {
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0px;
   }
   .preference-list__item:not(:last-child) {
     margin-right: 30px;
@@ -1166,11 +1192,6 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox__field input[type=checkbox] {
-  width: 16px;
-  height: 15px;
-}
-
 .modal-checkbox__field {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -1227,6 +1248,10 @@ textarea {
   color: #ffffff;
 }
 
+.span {
+  display: contents;
+}
+
 .project-filter__list {
   display: flex;
   flex-wrap: wrap;
@@ -1260,7 +1285,7 @@ textarea {
     margin-bottom: 15px;
   }
   .project-filter__item:nth-last-child(-n+2) {
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
   .project-filter__item:nth-child(3) {
     margin-right: 0;
@@ -1270,6 +1295,9 @@ textarea {
   }
 }
 @media screen and (min-width: 768px) {
+  .project-filter__item {
+    margin-bottom: 0;
+  }
   .project-filter__item:not(:last-child) {
     margin-right: 8px;
   }
@@ -1367,6 +1395,7 @@ textarea {
 .project-list__card {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 
 @media screen and (max-width: 767px) {
