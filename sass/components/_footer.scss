@@ -115,6 +115,10 @@
 .footer-list__icon {
   background: rgba(255, 255, 255, 0.1);
   fill: $accent-color;
+  border-radius: 50px;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   .social-list__link:hover &,
   .social-list__link:focus & {
